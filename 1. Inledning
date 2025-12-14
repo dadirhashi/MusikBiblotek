@@ -1,0 +1,37 @@
+Syftet med denna rapport är att designa och implementera ett SQL‑dataschema för ett musikbibliotek. Databasen ska kunna lagra information om artister, album och låtar, samt möjliggöra vanliga operationer som att skapa, läsa, uppdatera och radera data. Rapporten visar även exempel på queries och jämförelser mellan SQL och LINQ.
+
+2. Databasstruktur
+Databasen består av tre centrala tabeller:
+
+Artist
+
+ArtistID (PK, int, auto increment)
+
+Name (nvarchar(100), NOT NULL)
+
+Album
+
+AlbumID (PK, int, auto increment)
+
+Title (nvarchar(100), NOT NULL)
+
+ReleaseYear (int)
+
+ArtistID (FK → Artist.ArtistID)
+
+Song
+
+SongID (PK, int, auto increment)
+
+Title (nvarchar(100), NOT NULL)
+
+Duration (int, sekunder)
+
+AlbumID (FK → Album.AlbumID)
+
+
+Relationer:
+
+En Artist kan ha många Album.
+
+Ett Album kan ha många Songs

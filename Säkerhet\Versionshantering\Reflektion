@@ -1,0 +1,31 @@
+Säkerhet.
+
+Säker åtkomst till databasen är avgörande för att skydda känslig information.
+
+Authentication säkerställer att endast behöriga användare kan logga in.
+
+Authorization styr vilka rättigheter varje användare har.
+
+Parametriserade queries minskar risken för SQL‑injektion.
+
+Kryptering skyddar data även vid intrång.
+
+Rollbaserad åtkomstkontroll gör det enklare att hantera behörigheter.
+
+ Versionshantering
+ 
+Alla SQL‑filer har lagts i en /sql‑mapp i GitHub. Exempel på commits:
+
+Added create_tables.sql
+
+Inserted sample data
+
+Implemented join queries
+
+Versionshantering är viktigt för att spåra ändringar, samarbeta och återställa tidigare versioner vid behov.
+
+Reflektion
+
+Det gick bra att skapa tabeller och fylla dem med data. Det svåraste var att formulera JOIN‑queries korrekt.
+Jag kan förbättra min förståelse för LINQ genom att öva mer på komplexa queries.
+Jag har också lärt mig vikten av att tänka på säkerhet och versionshantering redan från början.
